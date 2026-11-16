@@ -1,0 +1,34 @@
+#include "stm32f4xx.h"
+
+#define GPIOAEN		(1U<<0)
+#define USRT2EN		(1U<<17)
+
+int main (void){
+
+	while(1)
+	{
+
+	}
+}
+
+void uart2_tx_init(void){
+	RCC->AHB1ENR |= GPIOAEN;
+
+	GPIOA->MODER &=~(1U<<4);
+	GPIOA->MODER |= (1U<<5);
+
+	GPIOA->AFR[0] |= (1U<<8);
+	GPIOA->AFR[0] |= (1U<<9);
+	GPIOA->AFR[0] |= (1U<<10);
+	GPIOA->AFR[0] &=~ (1U<<11);
+
+	RCC->APB1ENR |= UART2EN;
+}
+
+static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate){
+	USARTx->BRR = compute_uart_bd(PeriphClk, BaudRate);
+}
+
+static compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate){
+	return ((PeriphClk + (BaudRate/2U))/BaudRate);
+}

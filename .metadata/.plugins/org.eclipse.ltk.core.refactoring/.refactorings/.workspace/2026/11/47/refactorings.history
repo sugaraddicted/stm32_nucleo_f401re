@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy Project &apos;4_gpio_input&apos;" description="Copy Project &apos;4_gpio_input&apos;" destination="C:/Users/PC/STM32CubeIDE/bare_metal" element="/4_gpio_input" flags="7" id="org.eclipse.ltk.core.refactoring.copyproject.resource" name="5_gpio_uart_tx" stamp="1794861231922"/>
+</session>
