@@ -1,0 +1,35 @@
+# ---- STM32CubeIDE / Eclipse workspace ----
+.metadata/
+RemoteSystemsTempFiles/
+
+# ---- Build output ----
+**/Debug/
+**/Release/
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.map
+*.list
+*.hex
+*.bin
+
+# ---- Editor / OS ----
+*.bak
+*.BAK
+*~
+.vscode/
+Thumbs.db
+desktop.ini
+
+# ---- RealTerm install files (tool, not project code) ----
+realterm.exe
+uninst.exe
+HexCSV2DEC.exe
+term_hex.FON
+Realterm.url
+Readme.txt
+change_log.txt
+wrapper/
+examples/

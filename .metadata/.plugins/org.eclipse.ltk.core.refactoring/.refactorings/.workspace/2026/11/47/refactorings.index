@@ -1,1 +1,7 @@
 1794861231922	Copy Project '4_gpio_input'
+1795090810505	Delete resource '5_gpio_uart_tx'
+1795090846130	Copy Project '4_gpio_input'
+1795090893795	Delete resource '5_gpio_usart_tx'
+1795093752455	Copy Project '5_gpio_usart_tx'
+1795095363392	Copy Project '6_uart_printf'
+1795121021889	Copy Project '7_uart_modular'
